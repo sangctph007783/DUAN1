@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />   
+
+    <EditText
+        android:textColor="@color/WhiteColor"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edtUsername"
+        android:layout_width="385dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="Tên đăng nhập"
+        />
+
+    <EditText
+        android:textColor="@color/WhiteColor"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/edtPassword"
+        android:layout_width="383dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Mật khẩu"
+        android:inputType="textPassword"
+        />
+
+    <CheckBox
+
+        android:id="@+id/chkRememberPass"
+        android:layout_width="383dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Lưu mật khẩu" />
+
+    <LinearLayout
+        android:layout_width="396dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:onClick="checkLogin"
+            android:text="Đăng nhập" />
+
+        <Button
+            android:onClick="imgdangki"
+            android:id="@+id/btndangki"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Đăng kí" />
+    </LinearLayout>
+
+</LinearLayout>

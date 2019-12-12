@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.DuAn1_SangCtph07783">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.example.DuAn1_SangCtph07783.moder.MyApplication"
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider572740323519080"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+
+
+        <activity android:name="com.example.DuAn1_SangCtph07783.activity.ActShow"
+            android:theme="@style/FullScreen">
+
+        </activity>
+        <activity android:name="com.example.DuAn1_SangCtph07783.activity.ActInformation"
+            android:theme="@style/FullScreen">
+
+        </activity>
+        <activity
+            android:name="com.example.DuAn1_SangCtph07783.activity.Main2Activity"
+            android:label="@string/title_activity_main2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.DuAn1_SangCtph07783.activity.ActChao"
+            android:theme="@style/FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

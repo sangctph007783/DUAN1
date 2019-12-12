@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0F96B2</color>
+    <color name="colorPrimaryDark">#0F96B2</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="WhiteColor">#ffffff</color>
+    <color name="WhiteColor1">#9AFFFFFF</color>
+    <color name="RedColor">#DE0D0D</color>
+    <color name="BlackColor">#000000</color>
+    <color name="TextColor">#00D3FF</color>
+    <color name="VangColor">#9E8247</color>
+    <color name="XamColor">#312919</color>
+</resources>

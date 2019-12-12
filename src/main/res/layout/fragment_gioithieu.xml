@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo" />
+    <TextView
+        android:text="Đọc Truyện Tranh"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+     
+        android:textSize="35dp"
+        android:textColor="@color/WhiteColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/WhiteColor"
+        android:text="Tác giả : CTS"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:textColor="@color/WhiteColor"
+        android:text="Xuất bản : 2019"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="Hãy tải ngay phần mềm đọc truyện online miễn phí của doctruyentranh, giúp bạn thoả sức đọc truyện online/offline thật dễ dàng, Doctruyentranh cung cấp rất nhiều đầu truyện thuộc nhiều thể loại trong đó có nhiều truyện miễn phí, dù bạn dành cả tuổi thanh xuân đọc cũng không hết.
+* Kho truyện cực lớn với gần 50.000 ngàn đầu truyện được đội ngũ chúng tôi biên tập, bao gồm các thể loại ưa thích như: ngôn tình, truyện teen, truyện tiên hiệp, kiếm hiệp, đô thị, sắc hiệp, huyền huyễn, xuyên không...
+
+
+"
+        android:textColor="@color/WhiteColor"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

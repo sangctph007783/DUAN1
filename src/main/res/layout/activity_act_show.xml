@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteColor"
+    tools:context=".activity.ActShow">
+
+    <RelativeLayout
+        android:id="@+id/MenuTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:id="@+id/tvNamesachShow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@+id/imgSave"
+            android:layout_toRightOf="@+id/imgBack"
+            android:textColor="@color/WhiteColor"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/imgBack" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:onClick="zoomOut"
+            android:id="@+id/imgZoom_out"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/icons_zoom_out" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:onClick="zoomLon"
+            android:id="@+id/imgZoom_in"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/imgZoom_out"
+            android:src="@drawable/icons_zoom_in" />
+
+
+        <com.facebook.share.widget.ShareButton
+            android:layout_centerVertical="true"
+            android:id="@+id/fb_share_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/imgZoom_in"
+            android:src="@drawable/icons_share" />
+
+        <ImageView
+            android:onClick="Save"
+            android:layout_centerVertical="true"
+            android:id="@+id/imgSave"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@id/fb_share_button"
+            android:src="@drawable/icons_save" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/lnShow"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/menuBotton"
+        app:layout_constraintTop_toBottomOf="@+id/MenuTop">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/lnClick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleShow"
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp"
+                    android:gravity="center"
+                    android:textColor="@color/RedColor"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textSize="14sp"
+                    android:textColor="@color/BlackColor"
+                    android:id="@+id/tvDoc"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/menuBotton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+
+        <TextView
+            android:id="@+id/tvSoMucCt"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:background="@drawable/background_so_muc"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/imgSkip"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/tvSoMucCt"
+            android:src="@drawable/icons_skip" />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/imgNext"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/imgSkip"
+            android:src="@drawable/icons_next" />
+
+        <RadioGroup
+            android:layout_centerVertical="true"
+            android:id="@+id/groupRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/imgNext"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdBtnTrang"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:buttonTint="@color/WhiteColor"
+                android:text="Trắng"
+                android:textColor="@color/WhiteColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdBtnVang"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:buttonTint="@color/WhiteColor"
+                android:text="Vàng"
+                android:textColor="@color/WhiteColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rdBtnXam"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="3dp"
+                android:buttonTint="@color/WhiteColor"
+                android:text="Xám"
+                android:textColor="@color/WhiteColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

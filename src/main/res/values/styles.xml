@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="FullScreen" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="tvSubMenuNav">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColor">@color/WhiteColor</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="tvMenu">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/TextColor</item>
+    </style>
+
+    <style name="tvMenuNav">
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/RedColor</item>
+    </style>
+    
+    <style name="imgMenuNav">
+        <item name="android:layout_width">42dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_marginRight">13dp</item>
+
+
+    </style>
+<style name="tvThongTin">
+    <item name="android:layout_marginTop">10dp</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:textColor">@color/BlackColor</item>
+</style>
+    <style name="lblThongTin">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+</resources>

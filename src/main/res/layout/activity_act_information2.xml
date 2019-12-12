@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ActInformation">
+
+    <RelativeLayout
+        android:id="@+id/MenuTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_arrow_back_black_24dp" />
+
+        <TextView
+            android:id="@+id/tvNamesachShow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_toRightOf="@+id/imgBack"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="10dp"
+            android:layout_toLeftOf="@+id/tvDocTiep"
+            android:textColor="@color/WhiteColor"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:onClick="DocTiep"
+            android:layout_marginRight="5dp"
+            android:id="@+id/tvDocTiep"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Đọc tiếp"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/WhiteColor"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgTTAvata"
+        android:layout_width="81dp"
+        android:layout_height="123dp"
+        android:layout_margin="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MenuTop" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiV30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guiV50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        style="@style/tvThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_ThongTin"
+        app:layout_constraintStart_toEndOf="@+id/guiV30"
+        app:layout_constraintTop_toBottomOf="@+id/MenuTop" />
+
+    <TextView
+        android:id="@+id/tvNameTT"
+        style="@style/lblThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guiV50"
+        app:layout_constraintTop_toBottomOf="@+id/MenuTop" />
+
+
+    <TextView
+        style="@style/tvThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TacGia_ThongTin"
+        app:layout_constraintStart_toEndOf="@+id/guiV30"
+        app:layout_constraintTop_toBottomOf="@id/tvNameTT" />
+
+    <TextView
+        android:id="@+id/tvTacGiaTT"
+        style="@style/lblThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guiV50"
+        app:layout_constraintTop_toBottomOf="@id/tvNameTT" />
+
+
+    <TextView
+        style="@style/tvThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nxb_ThongTin"
+        app:layout_constraintStart_toEndOf="@+id/guiV30"
+        app:layout_constraintTop_toBottomOf="@id/tvTacGiaTT" />
+
+    <TextView
+        android:id="@+id/tvNXBTT"
+        style="@style/lblThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guiV50"
+        app:layout_constraintTop_toBottomOf="@id/tvTacGiaTT" />
+
+    <TextView
+        style="@style/tvThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SoMuc_ThongTin"
+        app:layout_constraintStart_toEndOf="@+id/guiV30"
+        app:layout_constraintTop_toBottomOf="@id/tvNXBTT" />
+
+    <TextView
+        android:id="@+id/tvSoMucTT"
+        style="@style/lblThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guiV50"
+        app:layout_constraintTop_toBottomOf="@id/tvNXBTT" />
+
+    <TextView
+        style="@style/tvThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Nguon_ThongTin"
+        app:layout_constraintStart_toEndOf="@+id/guiV30"
+        app:layout_constraintTop_toBottomOf="@id/tvSoMucTT" />
+
+    <TextView
+        android:id="@+id/tvNguonTT"
+        style="@style/lblThongTin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/guiV50"
+        app:layout_constraintTop_toBottomOf="@id/tvSoMucTT" />
+
+    <TextView
+        android:id="@+id/tvMucLuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/mucLuc"
+        android:textColor="@color/RedColor"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/tvNguonTT" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ryMucLuc"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMucLuc"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
